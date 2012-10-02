@@ -1,0 +1,16 @@
+language: c
+
+before_script:
+    - ./travis.sh
+env:
+    - LUA_VERSION=master
+    - LUA_VERSION=5.2.1
+    - LUA_VERSION=5.2
+    - LUA_VERSION=5.1.5
+    - LUA_VERSION=5.1.4
+
+before_script:
+    - ./travis.sh
+
+script: 
+    - lua uuiddqd_test.lua
