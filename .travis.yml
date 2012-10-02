@@ -1,4 +1,4 @@
-language: c
+language: ruby
 
 before_script:
     - ./travis.sh
@@ -9,8 +9,9 @@ env:
     - LUA_VERSION=5.1.5
     - LUA_VERSION=5.1.4
 
-before_script:
-    - ./travis.sh
+before_install:
+    - sudo apt-get update -qq
+    - sudo apt-get install -qq uuid-dev
 
 script: 
-    - lua uuiddqd_test.lua
+    - ./lua/lua uuiddqd_test.lua

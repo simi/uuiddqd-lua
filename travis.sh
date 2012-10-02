@@ -3,6 +3,6 @@ cd lua/
 git checkout -qf $LUA_VERSION
 cmake .
 make
+sudo make install
 cd ../
 make
-sudo make install
