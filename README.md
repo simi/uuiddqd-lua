@@ -1,4 +1,4 @@
-# Uuiddqd-lua
+# Uuiddqd-lua [![Build Status](https://secure.travis-ci.org/simi/uuiddqd-lua.png)](http://travis-ci.org/simi/uuiddqd-lua)
 
 Simple libuuid lua c binding
 
